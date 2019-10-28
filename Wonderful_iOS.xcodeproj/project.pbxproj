@@ -1,0 +1,906 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2345456E0BB259FDF5C61A19 /* libPods-Wonderful_iOSUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C32F7E7C8C6CEF00825A5D4D /* libPods-Wonderful_iOSUITests.a */; };
+		4D372ADE0EBE9F267F269DA2 /* libPods-Wonderful_iOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1F0A3D259049E6EA3FCBD3D /* libPods-Wonderful_iOSTests.a */; };
+		D048359401E66F49C99F2191 /* libPods-Wonderful_iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D54F838FA88555A4FB17B9DA /* libPods-Wonderful_iOS.a */; };
+		FF166BCD2303ED83009F4493 /* JXHFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FF166BCB2303ED83009F4493 /* JXHFileManager.m */; };
+		FF166BFF230506D0009F4493 /* NSDictionary+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = FF166BFB230506CF009F4493 /* NSDictionary+Safe.m */; };
+		FF166C00230506D0009F4493 /* NSData+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = FF166BFD230506D0009F4493 /* NSData+Safe.m */; };
+		FF166C01230506D0009F4493 /* NSArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = FF166BFE230506D0009F4493 /* NSArray+Safe.m */; };
+		FF166C0423054AD1009F4493 /* UIView+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = FF166C0323054AD1009F4493 /* UIView+Extend.m */; };
+		FF166C0C2306A8A7009F4493 /* RootNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF166C0B2306A8A7009F4493 /* RootNavViewController.m */; };
+		FF166C0F2306A8BB009F4493 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF166C0E2306A8BB009F4493 /* RootViewController.m */; };
+		FF1834BB22FBFC1F00E50B54 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1834BA22FBFC1F00E50B54 /* AppDelegate.m */; };
+		FF1834BE22FBFC1F00E50B54 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1834BD22FBFC1F00E50B54 /* ViewController.m */; };
+		FF1834C122FBFC1F00E50B54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF1834BF22FBFC1F00E50B54 /* Main.storyboard */; };
+		FF1834C322FBFC2400E50B54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF1834C222FBFC2400E50B54 /* Assets.xcassets */; };
+		FF1834C622FBFC2400E50B54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF1834C422FBFC2400E50B54 /* LaunchScreen.storyboard */; };
+		FF1834C922FBFC2400E50B54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1834C822FBFC2400E50B54 /* main.m */; };
+		FF1834D322FBFC2400E50B54 /* Wonderful_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1834D222FBFC2400E50B54 /* Wonderful_iOSTests.m */; };
+		FF1834DE22FBFC2400E50B54 /* Wonderful_iOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1834DD22FBFC2400E50B54 /* Wonderful_iOSUITests.m */; };
+		FF1834EC22FC01BC00E50B54 /* playList.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF1834EB22FC01BC00E50B54 /* playList.plist */; };
+		FF1834EF22FC1DBE00E50B54 /* LivePlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1834EE22FC1DBE00E50B54 /* LivePlayViewController.m */; };
+		FF1834F622FD151000E50B54 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF1834F522FD151000E50B54 /* AudioToolbox.framework */; };
+		FF1834F822FD151700E50B54 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF1834F722FD151700E50B54 /* AVFoundation.framework */; };
+		FF1834FA22FD151F00E50B54 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF1834F922FD151F00E50B54 /* CFNetwork.framework */; };
+		FF1834FC22FD152D00E50B54 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF1834FB22FD152D00E50B54 /* CoreFoundation.framework */; };
+		FF1834FE22FD153700E50B54 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF1834FD22FD153700E50B54 /* CoreGraphics.framework */; };
+		FF18350022FD154200E50B54 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF1834FF22FD154200E50B54 /* CoreMedia.framework */; };
+		FF18350222FD154B00E50B54 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF18350122FD154B00E50B54 /* CoreText.framework */; };
+		FF18350622FD156300E50B54 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FF18350522FD156300E50B54 /* libbz2.tbd */; };
+		FF18350822FD157100E50B54 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FF18350722FD157100E50B54 /* libiconv.tbd */; };
+		FF18350A22FD157F00E50B54 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF18350922FD157F00E50B54 /* OpenGLES.framework */; };
+		FF18350C22FD158800E50B54 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF18350B22FD158800E50B54 /* QuartzCore.framework */; };
+		FF18350E22FD159100E50B54 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF18350D22FD159100E50B54 /* Security.framework */; };
+		FF18351022FD159900E50B54 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF18350F22FD159900E50B54 /* VideoToolbox.framework */; };
+		FF18351422FD218A00E50B54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF18351322FD218A00E50B54 /* Foundation.framework */; };
+		FF18353122FD666B00E50B54 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FF18353022FD666B00E50B54 /* libc++.tbd */; };
+		FF18353622FD79A700E50B54 /* ZZMediaPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF18353522FD79A700E50B54 /* ZZMediaPlayer.m */; };
+		FF18353922FD7A1C00E50B54 /* ZZMediaPalyerControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FF18353822FD7A1C00E50B54 /* ZZMediaPalyerControl.m */; };
+		FF18353C22FD84D300E50B54 /* ZZPlayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF18353B22FD84D300E50B54 /* ZZPlayModel.m */; };
+		FFE2D250232F90700077DF42 /* MobileVLCKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFE2D24F232F90700077DF42 /* MobileVLCKit.framework */; };
+		FFE2D251232F94260077DF42 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF18350322FD155300E50B54 /* CoreVideo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF1834CF22FBFC2400E50B54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF1834AE22FBFC1F00E50B54 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF1834B522FBFC1F00E50B54;
+			remoteInfo = Wonderful_iOS;
+		};
+		FF1834DA22FBFC2400E50B54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF1834AE22FBFC1F00E50B54 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF1834B522FBFC1F00E50B54;
+			remoteInfo = Wonderful_iOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04B444C88BEBC10BCAA18333 /* Pods-Wonderful_iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wonderful_iOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-Wonderful_iOSUITests/Pods-Wonderful_iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3380E39E9946393867ECDE40 /* Pods-Wonderful_iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wonderful_iOSTests.debug.xcconfig"; path = "Target Support Files/Pods-Wonderful_iOSTests/Pods-Wonderful_iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		466D7FAA2161BDBE77B35BA8 /* Pods-Wonderful_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wonderful_iOS.release.xcconfig"; path = "Target Support Files/Pods-Wonderful_iOS/Pods-Wonderful_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		9BA2C95FC92A3065086A31E3 /* Pods-Wonderful_iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wonderful_iOSTests.release.xcconfig"; path = "Target Support Files/Pods-Wonderful_iOSTests/Pods-Wonderful_iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		B913DEA8FC98C385A1FEC721 /* Pods-Wonderful_iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wonderful_iOSUITests.release.xcconfig"; path = "Target Support Files/Pods-Wonderful_iOSUITests/Pods-Wonderful_iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BB1E589A62019D1BA8EBC039 /* Pods-Wonderful_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wonderful_iOS.debug.xcconfig"; path = "Target Support Files/Pods-Wonderful_iOS/Pods-Wonderful_iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		C1F0A3D259049E6EA3FCBD3D /* libPods-Wonderful_iOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Wonderful_iOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C32F7E7C8C6CEF00825A5D4D /* libPods-Wonderful_iOSUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Wonderful_iOSUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D54F838FA88555A4FB17B9DA /* libPods-Wonderful_iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Wonderful_iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF166BCB2303ED83009F4493 /* JXHFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXHFileManager.m; sourceTree = "<group>"; };
+		FF166BCC2303ED83009F4493 /* JXHFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXHFileManager.h; sourceTree = "<group>"; };
+		FF166BCE2303F02B009F4493 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		FF166BF8230506CF009F4493 /* NSArray+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Safe.h"; sourceTree = "<group>"; };
+		FF166BF9230506CF009F4493 /* NSDictionary+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Safe.h"; sourceTree = "<group>"; };
+		FF166BFA230506CF009F4493 /* SafeData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeData.h; sourceTree = "<group>"; };
+		FF166BFB230506CF009F4493 /* NSDictionary+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Safe.m"; sourceTree = "<group>"; };
+		FF166BFC230506CF009F4493 /* NSData+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Safe.h"; sourceTree = "<group>"; };
+		FF166BFD230506D0009F4493 /* NSData+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Safe.m"; sourceTree = "<group>"; };
+		FF166BFE230506D0009F4493 /* NSArray+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Safe.m"; sourceTree = "<group>"; };
+		FF166C0223054AD1009F4493 /* UIView+Extend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Extend.h"; sourceTree = "<group>"; };
+		FF166C0323054AD1009F4493 /* UIView+Extend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extend.m"; sourceTree = "<group>"; };
+		FF166C0A2306A8A7009F4493 /* RootNavViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootNavViewController.h; sourceTree = "<group>"; };
+		FF166C0B2306A8A7009F4493 /* RootNavViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootNavViewController.m; sourceTree = "<group>"; };
+		FF166C0D2306A8BB009F4493 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		FF166C0E2306A8BB009F4493 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		FF1834B622FBFC1F00E50B54 /* Wonderful_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wonderful_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF1834B922FBFC1F00E50B54 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FF1834BA22FBFC1F00E50B54 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FF1834BC22FBFC1F00E50B54 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FF1834BD22FBFC1F00E50B54 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FF1834C022FBFC1F00E50B54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF1834C222FBFC2400E50B54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF1834C522FBFC2400E50B54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF1834C722FBFC2400E50B54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF1834C822FBFC2400E50B54 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FF1834CE22FBFC2400E50B54 /* Wonderful_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Wonderful_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF1834D222FBFC2400E50B54 /* Wonderful_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Wonderful_iOSTests.m; sourceTree = "<group>"; };
+		FF1834D422FBFC2400E50B54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF1834D922FBFC2400E50B54 /* Wonderful_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Wonderful_iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF1834DD22FBFC2400E50B54 /* Wonderful_iOSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Wonderful_iOSUITests.m; sourceTree = "<group>"; };
+		FF1834DF22FBFC2400E50B54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF1834EB22FC01BC00E50B54 /* playList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = playList.plist; sourceTree = "<group>"; };
+		FF1834ED22FC1DBE00E50B54 /* LivePlayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LivePlayViewController.h; sourceTree = "<group>"; };
+		FF1834EE22FC1DBE00E50B54 /* LivePlayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LivePlayViewController.m; sourceTree = "<group>"; };
+		FF1834F522FD151000E50B54 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		FF1834F722FD151700E50B54 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		FF1834F922FD151F00E50B54 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		FF1834FB22FD152D00E50B54 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		FF1834FD22FD153700E50B54 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FF1834FF22FD154200E50B54 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		FF18350122FD154B00E50B54 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		FF18350322FD155300E50B54 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		FF18350522FD156300E50B54 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		FF18350722FD157100E50B54 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		FF18350922FD157F00E50B54 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		FF18350B22FD158800E50B54 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		FF18350D22FD159100E50B54 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		FF18350F22FD159900E50B54 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		FF18351122FD217D00E50B54 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FF18351322FD218A00E50B54 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FF18353022FD666B00E50B54 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		FF18353422FD79A700E50B54 /* ZZMediaPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZMediaPlayer.h; sourceTree = "<group>"; };
+		FF18353522FD79A700E50B54 /* ZZMediaPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZMediaPlayer.m; sourceTree = "<group>"; };
+		FF18353722FD7A1C00E50B54 /* ZZMediaPalyerControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZMediaPalyerControl.h; sourceTree = "<group>"; };
+		FF18353822FD7A1C00E50B54 /* ZZMediaPalyerControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZMediaPalyerControl.m; sourceTree = "<group>"; };
+		FF18353A22FD84D300E50B54 /* ZZPlayModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZPlayModel.h; sourceTree = "<group>"; };
+		FF18353B22FD84D300E50B54 /* ZZPlayModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZPlayModel.m; sourceTree = "<group>"; };
+		FFE2D24F232F90700077DF42 /* MobileVLCKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MobileVLCKit.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF1834B322FBFC1F00E50B54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFE2D251232F94260077DF42 /* CoreVideo.framework in Frameworks */,
+				FF18353122FD666B00E50B54 /* libc++.tbd in Frameworks */,
+				FF18351422FD218A00E50B54 /* Foundation.framework in Frameworks */,
+				FF18351022FD159900E50B54 /* VideoToolbox.framework in Frameworks */,
+				FF18350E22FD159100E50B54 /* Security.framework in Frameworks */,
+				FF18350C22FD158800E50B54 /* QuartzCore.framework in Frameworks */,
+				FF18350A22FD157F00E50B54 /* OpenGLES.framework in Frameworks */,
+				FF18350822FD157100E50B54 /* libiconv.tbd in Frameworks */,
+				FF18350622FD156300E50B54 /* libbz2.tbd in Frameworks */,
+				FFE2D250232F90700077DF42 /* MobileVLCKit.framework in Frameworks */,
+				FF18350222FD154B00E50B54 /* CoreText.framework in Frameworks */,
+				FF18350022FD154200E50B54 /* CoreMedia.framework in Frameworks */,
+				FF1834FE22FD153700E50B54 /* CoreGraphics.framework in Frameworks */,
+				FF1834FC22FD152D00E50B54 /* CoreFoundation.framework in Frameworks */,
+				FF1834FA22FD151F00E50B54 /* CFNetwork.framework in Frameworks */,
+				FF1834F822FD151700E50B54 /* AVFoundation.framework in Frameworks */,
+				FF1834F622FD151000E50B54 /* AudioToolbox.framework in Frameworks */,
+				D048359401E66F49C99F2191 /* libPods-Wonderful_iOS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF1834CB22FBFC2400E50B54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D372ADE0EBE9F267F269DA2 /* libPods-Wonderful_iOSTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF1834D622FBFC2400E50B54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2345456E0BB259FDF5C61A19 /* libPods-Wonderful_iOSUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F16D8A512F08EB7FDE3F9ECC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BB1E589A62019D1BA8EBC039 /* Pods-Wonderful_iOS.debug.xcconfig */,
+				466D7FAA2161BDBE77B35BA8 /* Pods-Wonderful_iOS.release.xcconfig */,
+				3380E39E9946393867ECDE40 /* Pods-Wonderful_iOSTests.debug.xcconfig */,
+				9BA2C95FC92A3065086A31E3 /* Pods-Wonderful_iOSTests.release.xcconfig */,
+				04B444C88BEBC10BCAA18333 /* Pods-Wonderful_iOSUITests.debug.xcconfig */,
+				B913DEA8FC98C385A1FEC721 /* Pods-Wonderful_iOSUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FF166BCA2303ED79009F4493 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				FF166BF7230506BE009F4493 /* SafeFoundation */,
+				FF166BCC2303ED83009F4493 /* JXHFileManager.h */,
+				FF166BCB2303ED83009F4493 /* JXHFileManager.m */,
+				FF166C0223054AD1009F4493 /* UIView+Extend.h */,
+				FF166C0323054AD1009F4493 /* UIView+Extend.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		FF166BF7230506BE009F4493 /* SafeFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				FF166BF8230506CF009F4493 /* NSArray+Safe.h */,
+				FF166BFE230506D0009F4493 /* NSArray+Safe.m */,
+				FF166BFC230506CF009F4493 /* NSData+Safe.h */,
+				FF166BFD230506D0009F4493 /* NSData+Safe.m */,
+				FF166BF9230506CF009F4493 /* NSDictionary+Safe.h */,
+				FF166BFB230506CF009F4493 /* NSDictionary+Safe.m */,
+				FF166BFA230506CF009F4493 /* SafeData.h */,
+			);
+			path = SafeFoundation;
+			sourceTree = "<group>";
+		};
+		FF166C092306A870009F4493 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FF166C102306A8C4009F4493 /* subControllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FF166C102306A8C4009F4493 /* subControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FF166C0A2306A8A7009F4493 /* RootNavViewController.h */,
+				FF166C0B2306A8A7009F4493 /* RootNavViewController.m */,
+				FF166C0D2306A8BB009F4493 /* RootViewController.h */,
+				FF166C0E2306A8BB009F4493 /* RootViewController.m */,
+			);
+			path = subControllers;
+			sourceTree = "<group>";
+		};
+		FF1834AD22FBFC1F00E50B54 = {
+			isa = PBXGroup;
+			children = (
+				FF1834B822FBFC1F00E50B54 /* Wonderful_iOS */,
+				FF1834D122FBFC2400E50B54 /* Wonderful_iOSTests */,
+				FF1834DC22FBFC2400E50B54 /* Wonderful_iOSUITests */,
+				FF1834B722FBFC1F00E50B54 /* Products */,
+				FF1834F422FD151000E50B54 /* Frameworks */,
+				F16D8A512F08EB7FDE3F9ECC /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		FF1834B722FBFC1F00E50B54 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF1834B622FBFC1F00E50B54 /* Wonderful_iOS.app */,
+				FF1834CE22FBFC2400E50B54 /* Wonderful_iOSTests.xctest */,
+				FF1834D922FBFC2400E50B54 /* Wonderful_iOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF1834B822FBFC1F00E50B54 /* Wonderful_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				FF166C092306A870009F4493 /* Controllers */,
+				FF166BCA2303ED79009F4493 /* Tools */,
+				FF1834F122FD14A500E50B54 /* MobileVLCKit */,
+				FF1834F022FC1DE400E50B54 /* LivePlayer */,
+				FF1834B922FBFC1F00E50B54 /* AppDelegate.h */,
+				FF1834BA22FBFC1F00E50B54 /* AppDelegate.m */,
+				FF1834BC22FBFC1F00E50B54 /* ViewController.h */,
+				FF1834BD22FBFC1F00E50B54 /* ViewController.m */,
+				FF1834BF22FBFC1F00E50B54 /* Main.storyboard */,
+				FF1834C222FBFC2400E50B54 /* Assets.xcassets */,
+				FF1834C422FBFC2400E50B54 /* LaunchScreen.storyboard */,
+				FF1834C722FBFC2400E50B54 /* Info.plist */,
+				FF1834C822FBFC2400E50B54 /* main.m */,
+				FF1834EB22FC01BC00E50B54 /* playList.plist */,
+				FF166BCE2303F02B009F4493 /* PrefixHeader.pch */,
+			);
+			path = Wonderful_iOS;
+			sourceTree = "<group>";
+		};
+		FF1834D122FBFC2400E50B54 /* Wonderful_iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF1834D222FBFC2400E50B54 /* Wonderful_iOSTests.m */,
+				FF1834D422FBFC2400E50B54 /* Info.plist */,
+			);
+			path = Wonderful_iOSTests;
+			sourceTree = "<group>";
+		};
+		FF1834DC22FBFC2400E50B54 /* Wonderful_iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FF1834DD22FBFC2400E50B54 /* Wonderful_iOSUITests.m */,
+				FF1834DF22FBFC2400E50B54 /* Info.plist */,
+			);
+			path = Wonderful_iOSUITests;
+			sourceTree = "<group>";
+		};
+		FF1834F022FC1DE400E50B54 /* LivePlayer */ = {
+			isa = PBXGroup;
+			children = (
+				FF1834ED22FC1DBE00E50B54 /* LivePlayViewController.h */,
+				FF1834EE22FC1DBE00E50B54 /* LivePlayViewController.m */,
+				FF18353422FD79A700E50B54 /* ZZMediaPlayer.h */,
+				FF18353522FD79A700E50B54 /* ZZMediaPlayer.m */,
+				FF18353722FD7A1C00E50B54 /* ZZMediaPalyerControl.h */,
+				FF18353822FD7A1C00E50B54 /* ZZMediaPalyerControl.m */,
+				FF18353A22FD84D300E50B54 /* ZZPlayModel.h */,
+				FF18353B22FD84D300E50B54 /* ZZPlayModel.m */,
+			);
+			path = LivePlayer;
+			sourceTree = "<group>";
+		};
+		FF1834F122FD14A500E50B54 /* MobileVLCKit */ = {
+			isa = PBXGroup;
+			children = (
+				FFE2D24F232F90700077DF42 /* MobileVLCKit.framework */,
+			);
+			path = MobileVLCKit;
+			sourceTree = "<group>";
+		};
+		FF1834F422FD151000E50B54 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF18353022FD666B00E50B54 /* libc++.tbd */,
+				FF18351322FD218A00E50B54 /* Foundation.framework */,
+				FF18351122FD217D00E50B54 /* UIKit.framework */,
+				FF18350F22FD159900E50B54 /* VideoToolbox.framework */,
+				FF18350D22FD159100E50B54 /* Security.framework */,
+				FF18350B22FD158800E50B54 /* QuartzCore.framework */,
+				FF18350922FD157F00E50B54 /* OpenGLES.framework */,
+				FF18350722FD157100E50B54 /* libiconv.tbd */,
+				FF18350522FD156300E50B54 /* libbz2.tbd */,
+				FF18350322FD155300E50B54 /* CoreVideo.framework */,
+				FF18350122FD154B00E50B54 /* CoreText.framework */,
+				FF1834FF22FD154200E50B54 /* CoreMedia.framework */,
+				FF1834FD22FD153700E50B54 /* CoreGraphics.framework */,
+				FF1834FB22FD152D00E50B54 /* CoreFoundation.framework */,
+				FF1834F922FD151F00E50B54 /* CFNetwork.framework */,
+				FF1834F722FD151700E50B54 /* AVFoundation.framework */,
+				FF1834F522FD151000E50B54 /* AudioToolbox.framework */,
+				D54F838FA88555A4FB17B9DA /* libPods-Wonderful_iOS.a */,
+				C1F0A3D259049E6EA3FCBD3D /* libPods-Wonderful_iOSTests.a */,
+				C32F7E7C8C6CEF00825A5D4D /* libPods-Wonderful_iOSUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF1834B522FBFC1F00E50B54 /* Wonderful_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF1834E222FBFC2400E50B54 /* Build configuration list for PBXNativeTarget "Wonderful_iOS" */;
+			buildPhases = (
+				8995874BC5042CCEB577E737 /* [CP] Check Pods Manifest.lock */,
+				FF1834B222FBFC1F00E50B54 /* Sources */,
+				FF1834B322FBFC1F00E50B54 /* Frameworks */,
+				FF1834B422FBFC1F00E50B54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Wonderful_iOS;
+			productName = Wonderful_iOS;
+			productReference = FF1834B622FBFC1F00E50B54 /* Wonderful_iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF1834CD22FBFC2400E50B54 /* Wonderful_iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF1834E522FBFC2400E50B54 /* Build configuration list for PBXNativeTarget "Wonderful_iOSTests" */;
+			buildPhases = (
+				39384089CBFB51C630FC50B9 /* [CP] Check Pods Manifest.lock */,
+				FF1834CA22FBFC2400E50B54 /* Sources */,
+				FF1834CB22FBFC2400E50B54 /* Frameworks */,
+				FF1834CC22FBFC2400E50B54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF1834D022FBFC2400E50B54 /* PBXTargetDependency */,
+			);
+			name = Wonderful_iOSTests;
+			productName = Wonderful_iOSTests;
+			productReference = FF1834CE22FBFC2400E50B54 /* Wonderful_iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FF1834D822FBFC2400E50B54 /* Wonderful_iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF1834E822FBFC2400E50B54 /* Build configuration list for PBXNativeTarget "Wonderful_iOSUITests" */;
+			buildPhases = (
+				20B9CF5DA12E058297F18476 /* [CP] Check Pods Manifest.lock */,
+				FF1834D522FBFC2400E50B54 /* Sources */,
+				FF1834D622FBFC2400E50B54 /* Frameworks */,
+				FF1834D722FBFC2400E50B54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF1834DB22FBFC2400E50B54 /* PBXTargetDependency */,
+			);
+			name = Wonderful_iOSUITests;
+			productName = Wonderful_iOSUITests;
+			productReference = FF1834D922FBFC2400E50B54 /* Wonderful_iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF1834AE22FBFC1F00E50B54 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "泽泽";
+				TargetAttributes = {
+					FF1834B522FBFC1F00E50B54 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					FF1834CD22FBFC2400E50B54 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = FF1834B522FBFC1F00E50B54;
+					};
+					FF1834D822FBFC2400E50B54 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = FF1834B522FBFC1F00E50B54;
+					};
+				};
+			};
+			buildConfigurationList = FF1834B122FBFC1F00E50B54 /* Build configuration list for PBXProject "Wonderful_iOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF1834AD22FBFC1F00E50B54;
+			productRefGroup = FF1834B722FBFC1F00E50B54 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF1834B522FBFC1F00E50B54 /* Wonderful_iOS */,
+				FF1834CD22FBFC2400E50B54 /* Wonderful_iOSTests */,
+				FF1834D822FBFC2400E50B54 /* Wonderful_iOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF1834B422FBFC1F00E50B54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF1834C622FBFC2400E50B54 /* LaunchScreen.storyboard in Resources */,
+				FF1834C322FBFC2400E50B54 /* Assets.xcassets in Resources */,
+				FF1834EC22FC01BC00E50B54 /* playList.plist in Resources */,
+				FF1834C122FBFC1F00E50B54 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF1834CC22FBFC2400E50B54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF1834D722FBFC2400E50B54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		20B9CF5DA12E058297F18476 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Wonderful_iOSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		39384089CBFB51C630FC50B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Wonderful_iOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8995874BC5042CCEB577E737 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Wonderful_iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF1834B222FBFC1F00E50B54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF166C0C2306A8A7009F4493 /* RootNavViewController.m in Sources */,
+				FF166BCD2303ED83009F4493 /* JXHFileManager.m in Sources */,
+				FF166C00230506D0009F4493 /* NSData+Safe.m in Sources */,
+				FF166BFF230506D0009F4493 /* NSDictionary+Safe.m in Sources */,
+				FF166C01230506D0009F4493 /* NSArray+Safe.m in Sources */,
+				FF18353C22FD84D300E50B54 /* ZZPlayModel.m in Sources */,
+				FF18353622FD79A700E50B54 /* ZZMediaPlayer.m in Sources */,
+				FF18353922FD7A1C00E50B54 /* ZZMediaPalyerControl.m in Sources */,
+				FF166C0F2306A8BB009F4493 /* RootViewController.m in Sources */,
+				FF1834EF22FC1DBE00E50B54 /* LivePlayViewController.m in Sources */,
+				FF1834BE22FBFC1F00E50B54 /* ViewController.m in Sources */,
+				FF1834C922FBFC2400E50B54 /* main.m in Sources */,
+				FF166C0423054AD1009F4493 /* UIView+Extend.m in Sources */,
+				FF1834BB22FBFC1F00E50B54 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF1834CA22FBFC2400E50B54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF1834D322FBFC2400E50B54 /* Wonderful_iOSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF1834D522FBFC2400E50B54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF1834DE22FBFC2400E50B54 /* Wonderful_iOSUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF1834D022FBFC2400E50B54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF1834B522FBFC1F00E50B54 /* Wonderful_iOS */;
+			targetProxy = FF1834CF22FBFC2400E50B54 /* PBXContainerItemProxy */;
+		};
+		FF1834DB22FBFC2400E50B54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF1834B522FBFC1F00E50B54 /* Wonderful_iOS */;
+			targetProxy = FF1834DA22FBFC2400E50B54 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FF1834BF22FBFC1F00E50B54 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF1834C022FBFC1F00E50B54 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FF1834C422FBFC2400E50B54 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF1834C522FBFC2400E50B54 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF1834E022FBFC2400E50B54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FF1834E122FBFC2400E50B54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF1834E322FBFC2400E50B54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB1E589A62019D1BA8EBC039 /* Pods-Wonderful_iOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BKB2W89RHK;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Wonderful_iOS/MobileVLCKit",
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Wonderful_iOS/PrefixHeader.pch";
+				INFOPLIST_FILE = Wonderful_iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ios.Wonderful-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)";
+			};
+			name = Debug;
+		};
+		FF1834E422FBFC2400E50B54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 466D7FAA2161BDBE77B35BA8 /* Pods-Wonderful_iOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BKB2W89RHK;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Wonderful_iOS/MobileVLCKit",
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Wonderful_iOS/PrefixHeader.pch";
+				INFOPLIST_FILE = Wonderful_iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ios.Wonderful-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)";
+			};
+			name = Release;
+		};
+		FF1834E622FBFC2400E50B54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3380E39E9946393867ECDE40 /* Pods-Wonderful_iOSTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Wonderful_iOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ios.Wonderful-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wonderful_iOS.app/Wonderful_iOS";
+			};
+			name = Debug;
+		};
+		FF1834E722FBFC2400E50B54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BA2C95FC92A3065086A31E3 /* Pods-Wonderful_iOSTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Wonderful_iOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ios.Wonderful-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wonderful_iOS.app/Wonderful_iOS";
+			};
+			name = Release;
+		};
+		FF1834E922FBFC2400E50B54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04B444C88BEBC10BCAA18333 /* Pods-Wonderful_iOSUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Wonderful_iOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ios.Wonderful-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Wonderful_iOS;
+			};
+			name = Debug;
+		};
+		FF1834EA22FBFC2400E50B54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B913DEA8FC98C385A1FEC721 /* Pods-Wonderful_iOSUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Wonderful_iOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ios.Wonderful-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Wonderful_iOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF1834B122FBFC1F00E50B54 /* Build configuration list for PBXProject "Wonderful_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF1834E022FBFC2400E50B54 /* Debug */,
+				FF1834E122FBFC2400E50B54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF1834E222FBFC2400E50B54 /* Build configuration list for PBXNativeTarget "Wonderful_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF1834E322FBFC2400E50B54 /* Debug */,
+				FF1834E422FBFC2400E50B54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF1834E522FBFC2400E50B54 /* Build configuration list for PBXNativeTarget "Wonderful_iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF1834E622FBFC2400E50B54 /* Debug */,
+				FF1834E722FBFC2400E50B54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF1834E822FBFC2400E50B54 /* Build configuration list for PBXNativeTarget "Wonderful_iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF1834E922FBFC2400E50B54 /* Debug */,
+				FF1834EA22FBFC2400E50B54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF1834AE22FBFC1F00E50B54 /* Project object */;
+}

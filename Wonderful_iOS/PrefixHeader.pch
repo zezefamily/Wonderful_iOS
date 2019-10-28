@@ -1,0 +1,30 @@
+//
+//  PrefixHeader.pch
+//  Wonderful_iOS
+//
+//  Created by 泽泽 on 2019/8/14.
+//  Copyright © 2019 泽泽. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "AFNetworking.h"
+#import "MJExtension.h"
+#import "MBProgressHUD.h"
+#import "SafeData.h"
+#import "UIView+Extend.h"
+#import "Masonry.h"
+#ifdef DEBUG
+#define XXLog(...) NSLog(@"%s 第%d行 \n %@\n",__func__,__LINE__,[NSString stringWithFormat:__VA_ARGS__])
+#else
+#define XXLog(...)
+#endif
+
+#define XXIsNILorNULL(__value) (((__value == nil) || [__value isKindOfClass:[NSNull class]] || [__value isEqual:@"(null)"])?1:0)//判断是为空
+#define XXEmpty(__value) (((__value == nil) || [__value isKindOfClass:[NSNull class]]) ?@"":__value)//判断为空
+#define XXIsEmpty(__value) ([XXEmpty(__value) length]?0:1)//判断是否为空
+
+#endif /* PrefixHeader_pch */
