@@ -2,4 +2,4 @@
 由于文件过大，项目内未引入VLCMobileKit
 引入方式
 1.Pod 
-2.官网下载
+2.官网下载 https://code.videolan.org/videolan/VLCKit
