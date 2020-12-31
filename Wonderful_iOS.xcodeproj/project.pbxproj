@@ -45,7 +45,7 @@
 		FF18353622FD79A700E50B54 /* ZZMediaPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FF18353522FD79A700E50B54 /* ZZMediaPlayer.m */; };
 		FF18353922FD7A1C00E50B54 /* ZZMediaPalyerControl.m in Sources */ = {isa = PBXBuildFile; fileRef = FF18353822FD7A1C00E50B54 /* ZZMediaPalyerControl.m */; };
 		FF18353C22FD84D300E50B54 /* ZZPlayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF18353B22FD84D300E50B54 /* ZZPlayModel.m */; };
-		FFE2D250232F90700077DF42 /* MobileVLCKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFE2D24F232F90700077DF42 /* MobileVLCKit.framework */; };
+		FF75FEBA242C53EB00B86A8E /* MobileVLCKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF75FEB9242C53EB00B86A8E /* MobileVLCKit.framework */; };
 		FFE2D251232F94260077DF42 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF18350322FD155300E50B54 /* CoreVideo.framework */; };
 /* End PBXBuildFile section */
 
@@ -134,7 +134,7 @@
 		FF18353822FD7A1C00E50B54 /* ZZMediaPalyerControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZMediaPalyerControl.m; sourceTree = "<group>"; };
 		FF18353A22FD84D300E50B54 /* ZZPlayModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZZPlayModel.h; sourceTree = "<group>"; };
 		FF18353B22FD84D300E50B54 /* ZZPlayModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZPlayModel.m; sourceTree = "<group>"; };
-		FFE2D24F232F90700077DF42 /* MobileVLCKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MobileVLCKit.framework; sourceTree = "<group>"; };
+		FF75FEB9242C53EB00B86A8E /* MobileVLCKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MobileVLCKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,11 +151,11 @@
 				FF18350A22FD157F00E50B54 /* OpenGLES.framework in Frameworks */,
 				FF18350822FD157100E50B54 /* libiconv.tbd in Frameworks */,
 				FF18350622FD156300E50B54 /* libbz2.tbd in Frameworks */,
-				FFE2D250232F90700077DF42 /* MobileVLCKit.framework in Frameworks */,
 				FF18350222FD154B00E50B54 /* CoreText.framework in Frameworks */,
 				FF18350022FD154200E50B54 /* CoreMedia.framework in Frameworks */,
 				FF1834FE22FD153700E50B54 /* CoreGraphics.framework in Frameworks */,
 				FF1834FC22FD152D00E50B54 /* CoreFoundation.framework in Frameworks */,
+				FF75FEBA242C53EB00B86A8E /* MobileVLCKit.framework in Frameworks */,
 				FF1834FA22FD151F00E50B54 /* CFNetwork.framework in Frameworks */,
 				FF1834F822FD151700E50B54 /* AVFoundation.framework in Frameworks */,
 				FF1834F622FD151000E50B54 /* AudioToolbox.framework in Frameworks */,
@@ -320,7 +320,7 @@
 		FF1834F122FD14A500E50B54 /* MobileVLCKit */ = {
 			isa = PBXGroup;
 			children = (
-				FFE2D24F232F90700077DF42 /* MobileVLCKit.framework */,
+				FF75FEB9242C53EB00B86A8E /* MobileVLCKit.framework */,
 			);
 			path = MobileVLCKit;
 			sourceTree = "<group>";

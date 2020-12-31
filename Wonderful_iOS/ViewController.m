@@ -36,7 +36,9 @@
 }
 - (void)viewDidLayoutSubviews
 {
-//    _tableView mas_makeConstraints:<#^(MASConstraintMaker *make)block#>
+    [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+       
+    }];
 }
 #pragma mark - UITableViewDelegate/UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

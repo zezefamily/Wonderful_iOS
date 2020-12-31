@@ -149,6 +149,7 @@
 //    NSLog(@"vlcmedia == %d",);
     int totalTime = player.media.length.intValue;
     int currentTime = player.time.intValue;
+    NSLog(@"totalTime == %d ,currentTime == %d",totalTime,currentTime);
     _timeSlider.maximumValue = (float)totalTime;
     _timeSlider.value = (float)currentTime;
     _leftTimeLabel.text = [NSString stringWithFormat:@"%@",player.time.stringValue];

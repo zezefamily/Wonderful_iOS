@@ -17,6 +17,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    // scheme_color #1296db #8a8a8a
+    // 探索（?）
+    // 频道 （当前的频道列表+Ads）
+    // 个人中心（?）
     return YES;
 }
 

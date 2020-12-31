@@ -11,8 +11,7 @@
 // http://ivi.bupt.edu.cn/hls/chchd.m3u8
 // 列表地址
 // https://codeload.github.com/zezefamily/playlist/zip/master
-#define VIDEO_URL @"http://ivi.bupt.edu.cn/hls/chchd.m3u8"
-
+#define VIDEO_URL @"http://bestmathvod.oss-cn-beijing.aliyuncs.com/test/bigclass/demo.m3u8"
 #import "LivePlayViewController.h"
 #import "ZZMediaPlayer.h"
 #import "ZZPlayModel.h"
@@ -34,11 +33,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self loadUI];
-    //获取视频流缩略图
-    _imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, self.view.frame.size.height - 300, 400, 300)];
-    _imageView.backgroundColor = [UIColor lightGrayColor];
-    [self.view addSubview:_imageView];
-    [self getThumbnailer];
+//    //获取视频流缩略图
+//    _imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, self.view.frame.size.height - 300, 400, 300)];
+//    _imageView.backgroundColor = [UIColor lightGrayColor];
+//    [self.view addSubview:_imageView];
+//    [self getThumbnailer];
 }
 - (void)getThumbnailer
 {
@@ -124,8 +123,8 @@
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.mediaPlayer];
 //    ZZPlayModel *playModel = [ZZPlayModel mj_objectWithKeyValues:self.liveData];
-//    [self.mediaPlayer zz_playWithURL:VIDEO_URL];
-    [self.mediaPlayer zz_playWithModel:self.liveData];
+    [self.mediaPlayer zz_playWithURL:VIDEO_URL];
+//    [self.mediaPlayer zz_playWithModel:self.liveData];
 }
 - (void)backVC
 {
